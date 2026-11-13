@@ -81,7 +81,6 @@ export default function People() {
                       alt={p.alt}
                       tint={p.tint}
                       sizes="(min-width:1024px) 150px, 25vw"
-                      imageClassName="scale-[9"
                       className="h-full w-full rounded shadow-sm"
                     />
                   </div>

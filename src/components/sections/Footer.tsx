@@ -11,7 +11,7 @@ export default function Footer() {
           </div>
           {footerColumns.map((c) => (
             <nav key={c.heading} aria-label={c.heading}>
-              <p className="text-[11px] font-semibold uppercase tracking-wider">{c.heading}</p>
+              <p className="text-[11px] font-Tiny5 Duo">{c.heading}</p>
               <ul className="mt-4 space-y-3 text-xs text-white/60">{c.links.map((l) => <li key={l.label}><a href={l.href} className="hover:text-white">{l.label}</a></li>)}</ul>
             </nav>
           ))}

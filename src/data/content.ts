@@ -21,7 +21,7 @@ const tints = ["#9aa7c9", "#c5a27a", "#6e7f9a", "#d6a1a1", "#8aa68c", "#b9a9d4",
 export const people: Person[] = tints.map((tint, i) => ({ id: i + 1, tint, alt: `Student or teacher from the Luma community, photo ${i + 1}` }));
 export const courseMeta = ["8 lessons", "2h 40min", "Intermediate"];
 export const footerColumns: FooterColumn[] = [
-  { heading: "Explore", links: ["Courses", "Categories", "Instructors", "For Teams"].map((label) => ({ label, href: "#" })) },
+  { heading: "Explore", links: ["eu", "Categories", "Instructors", "For Teams"].map((label) => ({ label, href: "#" })) },
   { heading: "Company", links: ["About", "Careers", "Journal"].map((label) => ({ label, href: "#" })) },
   { heading: "Support", links: ["Help Center", "Contact", "Terms", "Privacy"].map((label) => ({ label, href: "#" })) },
 ];
