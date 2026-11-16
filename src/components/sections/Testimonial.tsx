@@ -6,7 +6,7 @@ function StatItem({ stat }: { stat: Stat }) {
   return (
     <div className="flex flex-col-reverse">
       <dt className="mt-1 text-xs text-ink/50">{stat.label}</dt>
-      <dd className="text-3xl font-extrabold tracking-tight text-brand lg:text-5xl">{stat.value}</dd>
+      <dd className="font-display text-3xl font-extrabold tracking-tight text-brand lg:text-5xl">{stat.value}</dd>
     </div>
   );
 }
@@ -16,13 +16,13 @@ export default function Testimonial() {
       <Container className="grid gap-10 lg:grid-cols-[1.5fr_1fr] lg:gap-16">
         <figure>
           <span className="text-5xl font-extrabold leading-none text-brand" aria-hidden>“</span>
-          <blockquote className="mt-2 text-2xl font-medium leading-snug tracking-tight lg:text-3xl">The lessons are short enough to fit into my week, but detailed enough that I actually leave with something I can use.</blockquote>
+          <blockquote className="font-display mt-2 text-2xl font-medium leading-snug tracking-tight lg:text-3xl">The lessons are short enough to fit into my week, but detailed enough that I actually leave with something I can use.</blockquote>
           <figcaption className="mt-6 flex items-center gap-3">
                <Photo src="avatar-alex.jpg" alt="" sizes="48px" tint="#9b1c2e" className="h-12 w-12 shrink-0 rounded-full" />
             <span className="text-sm"><b className="block">Alex Morgan</b><span className="text-ink/50">Product Manager</span></span>
           </figcaption>
         </figure>
-        <dl className="flex justify-between gap-4 lg:flex-col lg:gap-8 lg:border-l lg:border-black/10 lg:pl-10">
+        <dl className="font-display flex justify-between gap-4 lg:flex-col lg:gap-8 lg:border-l lg:border-black/10 lg:pl-10">
           {stats.map((s) => <StatItem key={s.value} stat={s} />)}
         </dl>
       </Container>
