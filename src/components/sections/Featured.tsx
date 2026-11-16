@@ -8,7 +8,7 @@ export default function Featured() {
       <Container className="grid items-center gap-10 lg:grid-cols-2">
         <div className="relative">
           <Photo src="featured.jpg" alt="Designer's desk with product prototypes and sketches" sizes="(min-width:1024px) 560px, 100vw" tint="#8a8f6e" className="aspect-[4/3] rounded-2xl" />
-          <span className="absolute left-0 top-0 rounded-br-lg rounded-tl-2xl bg-sunbtn px-3 py-1.5 text-[11px] font-bold uppercase text-ink">Featured course</span>
+          <span className="absolute -left-3 -top-2 z-10 rounded-md bg-sunbtn px-3 py-2 text-[11px] font-bold uppercase text-ink shadow-sm">Featured course</span>
         </div>
         <div>
           <p className="text-[11px] font-semibold uppercase tracking-wider text-white/80">Most popular this month</p>

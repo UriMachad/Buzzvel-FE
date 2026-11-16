@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { stats } from "@/data/content";
 import type { Stat } from "@/types";
 import Container from "@/components/ui/Container";
@@ -15,7 +16,7 @@ export default function Testimonial() {
     <section aria-label="Testimonial and numbers" className="bg-white py-14 lg:py-20">
       <Container className="grid gap-10 lg:grid-cols-[1.5fr_1fr] lg:gap-16">
         <figure>
-          <span className="text-5xl font-extrabold leading-none text-brand" aria-hidden>“</span>
+          <Image src="/images/quote.svg" alt="" width={28} height={24} aria-hidden />
           <blockquote className="font-display mt-2 text-2xl font-medium leading-snug tracking-tight lg:text-3xl">The lessons are short enough to fit into my week, but detailed enough that I actually leave with something I can use.</blockquote>
           <figcaption className="mt-6 flex items-center gap-3">
                <Photo src="avatar-alex.jpg" alt="" sizes="48px" tint="#9b1c2e" className="h-12 w-12 shrink-0 rounded-full" />

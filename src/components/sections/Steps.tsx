@@ -4,10 +4,14 @@ import type { Step } from "@/types";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 
-function StepItem({ step }: { step: Step }) {
+function StepItem({ step, showLine }: { step: Step; showLine: boolean }) {
   return (
     <li className="relative">
-      <div className="relative h-12 w-12">
+      {/* Line from this icon to the next one (desktop only). The last step has none. */}
+      {showLine && (
+        <span className="absolute left-0 top-6 hidden h-px w-[calc(100%+2.5rem)] bg-black/10 md:block" aria-hidden />
+      )}
+      <div className="relative z-10 h-12 w-12">
         <Image src={step.icon} alt="" width={48} height={48} />
         {step.dot && (
           <span
@@ -29,9 +33,10 @@ export default function Steps() {
     <section id="how" className="py-16 lg:py-24">
       <Container>
         <SectionHeading eyebrow="How Luma works" title="Less browsing. More learning." align="center" />
-        <ol className="relative mt-14 grid gap-10 md:grid-cols-3">
-          <div className="absolute left-0 right-0 top-6 hidden border-t border-black/10 md:block" aria-hidden />
-          {steps.map((s) => <StepItem key={s.title} step={s} />)}
+        <ol className="mt-14 grid gap-10 md:grid-cols-3">
+          {steps.map((s, i) => (
+            <StepItem key={s.title} step={s} showLine={i < steps.length - 1} />
+          ))}
         </ol>
       </Container>
     </section>
