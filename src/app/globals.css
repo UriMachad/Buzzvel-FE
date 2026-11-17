@@ -13,6 +13,7 @@
 body { background: var(--color-cream); color: var(--color-ink); }
     h1, h2, h3, .h2 { font-family: var(--font-display); }
 :focus-visible { outline: 2px solid var(--color-brand); outline-offset: 2px; }
+.on-dark :focus-visible { outline-color: #fff; }
 .wrap { max-width: 1200px; margin-inline: auto; padding-inline: 1.5rem; }
 .eyebrow { font-size: .6875rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--color-brand); }
 .h2 { font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 800; letter-spacing: -.03em; line-height: 1.1; }

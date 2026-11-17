@@ -4,7 +4,7 @@ import Button from "@/components/ui/Button";
 import Photo from "@/components/ui/Photo";
 export default function Featured() {
   return (
-    <section aria-labelledby="featured-title" className="bg-brand py-14 text-white lg:py-20">
+    <section aria-labelledby="featured-title" className="on-dark bg-brand py-14 text-white lg:py-20">
       <Container className="grid items-center gap-10 lg:grid-cols-2">
         <div className="relative">
           <Photo src="featured.jpg" alt="Designer's desk with product prototypes and sketches" sizes="(min-width:1024px) 560px, 100vw" tint="#8a8f6e" className="aspect-[4/3] rounded-2xl" />

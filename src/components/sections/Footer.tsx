@@ -2,7 +2,7 @@ import { footerColumns } from "@/data/content";
 import Container from "@/components/ui/Container";
 export default function Footer() {
   return (
-    <footer className="bg-ink py-14 text-white">
+    <footer className="on-dark bg-ink py-14 text-white">
       <Container>
         <div className="grid grid-cols-2 gap-10 md:grid-cols-[2fr_1fr_1fr_1fr]">
           <div className="col-span-2 md:col-span-1">
