@@ -4,11 +4,13 @@ Responsive landing page (mobile, tablet, desktop) built from the supplied Figma
 design with Next.js 15 (App Router), TypeScript and Tailwind CSS v4.
 
 ## Install, run, build
+```bash
 npm install
 npm run dev              # http://localhost:3000
 npm run build && npm start
 npm run lint
 npm test                 # Vitest: contact form validation
+```
 
 ## Structure
 - `src/data/content.ts` and `src/types.ts` – typed mock data
@@ -49,9 +51,9 @@ npm test                 # Vitest: contact form validation
   structure error.
 
 ## Checks
-- `npm run build`: passes
-- `npm run lint`: passes (Next.js warns that `next lint` is deprecated)
-- `npm test`: passes (2 tests)
+- npm run build: passes
+- npm run lint: passes
+- npm test: passes (2 tests)
 - Lighthouse, production build: Performance [98 mobile / 100 desktop],
   Accessibility [97 mobile / 97 desktop], Best Practices [100 mobile / 100 desktop], SEO [100 mobile / 100 desktop]
 - Manually checked at 375, 768 and 1440px, and with keyboard navigation.
@@ -72,5 +74,11 @@ Approximately 18 hours.
 
 ## AI tools used
 I used Claude (Anthropic) throughout the project: to generate the initial
-Next.js/TypeScript/Tailwind structure from the design screenshots and to help debug build, ESLint and test errors.
+Next.js/TypeScript/Tailwind structure from the design screenshots and to help
+debug build, ESLint and test errors.
+
+I checked the result by comparing each section with the Figma design,
+exporting and fixing the assets myself, testing at 375/768/1440px and with
+the keyboard, and running build, lint, tests and Lighthouse on the
+production build. 
 I can explain the code in this repository.
