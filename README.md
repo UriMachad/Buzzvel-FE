@@ -57,6 +57,8 @@ npm test                 # Vitest: contact form validation
 - Lighthouse, production build: Performance [98 mobile / 100 desktop],
   Accessibility [97 mobile / 97 desktop], Best Practices [100 mobile / 100 desktop], SEO [100 mobile / 100 desktop]
 - Manually checked at 375, 768 and 1440px, and with keyboard navigation.
+  ![Lighthouse mobile](docs/lighthouse-mobile.png)
+  ![Lighthouse desktop](docs/lighthouse-desktop.png)
 
 ## Known gaps
 - Spacing, sizes and positions were matched by eye against the Figma
